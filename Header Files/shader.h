@@ -6,6 +6,9 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+// taken from learnopengl.com
+// removed geometry shader related stuff
+
 // General purpose shader object. Compiles from file, generates
 // compile/link-time error messages and hosts several utility 
 // functions for easy management
@@ -26,7 +29,7 @@ public:
 	Shader& use();
 
 	// compiles the shader from given source code
-	void compile(const char* vertexSource, const char* fragmentSource, const char* geometrySource = nullptr);
+	void compile(const char* vertexSource, const char* fragmentSource);
 
 	// utility functions
 	void setFloat	(const char* name, float value, bool useShader = false);

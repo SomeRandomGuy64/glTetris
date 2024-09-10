@@ -17,7 +17,7 @@ int main(int, char**) {
 	}
 
 	const char* glslVersion{ "#version 460" };
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0); 
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 6);
@@ -55,7 +55,7 @@ int main(int, char**) {
 	// imgui state
 	bool showDemoWindow{ true };
 	bool showAnotherWindow{ false };
-	glm::vec4 clearColour{ 0.45f, 0.55f, 0.6f, 1.0f };
+	glm::vec4 clearColour{ 0.0f, 0.0f, 0.0f, 1.0f };
 
 	// main loop
 	bool done{ false };
